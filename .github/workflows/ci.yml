@@ -12,8 +12,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: |
-            path/to/dependencies
-            some/other/dependencies
+            .buildtool
           key: buildtool-${{ github.ref }}
           restore-keys: |
             buildtool-${{ github.ref }}

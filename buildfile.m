@@ -5,7 +5,7 @@ plan = buildplan(localfunctions);
 
 plan("clean") = CleanTask;
 plan("check") = CodeIssuesTask;
-plan("test") = TestTask;
+plan("test") = TestTask(SourceFiles="src");
 
 plan.DefaultTasks = ["check" "test"];
 end
