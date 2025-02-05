@@ -5,7 +5,6 @@ on:
 jobs:
   build:
     name: Run MATLAB Build
-    strategy:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
