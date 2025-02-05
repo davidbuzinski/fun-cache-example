@@ -2,11 +2,7 @@ function out = myfun1(str1, str2, options)
 arguments
     str1 (1,1) string
     str2 (1,1) string
-    options.SpaceSeparated = false
+    options.Delimiter = ""
 end
-delimiter = "";
-if options.SpaceSeparated
-    delimiter = " ";
-end
-out = str1 + delimiter + str2;
+out = str1 + options.Delimiter + str2;
 end
