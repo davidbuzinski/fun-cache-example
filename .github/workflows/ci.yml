@@ -17,6 +17,7 @@ jobs:
           restore-keys: |
             buildtool-${{ github.ref }}
             buildtool-${{ github.head_ref }}
+            buildtool-main
       - name: Set up MATLAB
         uses: matlab-actions/setup-matlab@v2
         with:
