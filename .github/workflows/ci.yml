@@ -29,4 +29,4 @@ jobs:
       - name: Run build
         uses: matlab-actions/run-build@v2
         with:
-          tasks: check test(RunOnlyImpacted=true)
+          tasks: check test(runo=true)
