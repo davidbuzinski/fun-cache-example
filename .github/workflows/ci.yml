@@ -18,3 +18,5 @@ jobs:
         uses: matlab-actions/run-build@v2
         with:
           tasks: check test
+      - name: Run tests
+        uses: matlab-actions/run-tests@v2
