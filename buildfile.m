@@ -5,7 +5,7 @@ plan = buildplan(localfunctions);
 
 plan("clean") = CleanTask;
 plan("check") = CodeIssuesTask;
-plan("test") = TestTask(SourceFiles="src", CoverageReport="coverage/coverage.cobertura.xml");
+plan("test") = TestTask(SourceFiles="src", CodeCoverageResults="coverage/coverage.cobertura.xml");
 
 plan.DefaultTasks = ["check" "test"];
 
