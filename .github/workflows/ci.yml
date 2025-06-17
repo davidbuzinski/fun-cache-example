@@ -23,10 +23,8 @@ jobs:
       - name: Set up MATLAB
         uses: matlab-actions/setup-matlab@v2
         with:
-          release: latest-including-prerelease
-          products: MATLAB_Test
           cache: true
       - name: Run build
         uses: matlab-actions/run-build@v2
         with:
-          tasks: check test(runo=true)
+          tasks: check test
